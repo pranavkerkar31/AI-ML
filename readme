@@ -2,3 +2,6 @@ Why Numpy over Lists?
 1) Speed : Numpy is fater than Lists
 2) Memory : Numpy is more memory efficient than Lists
 3) vectorization : Numpy is more vectorized than Lists
+
+* Numpy_speed file has the output speed comparison with the lists. 
+* Numpy1 file has the Dimension, Range, Matrix Calculations.

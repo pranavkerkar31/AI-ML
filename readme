@@ -4,4 +4,9 @@ Why Numpy over Lists?
 3) vectorization : Numpy is more vectorized than Lists
 
 * Numpy_speed file has the output speed comparison with the lists. 
+
 * Numpy1 file has the Dimension, Range, Matrix Calculations.
+
+* Numpy2 file has the Reshape, Reval, Type Casting, Dimension.
+
+* Reshape, Reval, Flatten file has the Reshape, Reval, Flatten important for matrix calculations. 

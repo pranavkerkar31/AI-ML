@@ -1,0 +1,59 @@
+========== DATA QUALITY REPORT ==========
+
+1. ACCURACY
+Invalid Age Entries: 8
+Invalid Salary Entries: 4
+Invalid Performance Scores: 3
+
+2. COMPLETENESS
+Missing Values Per Column:
+Employee_ID          0
+Name                 0
+Age                  1
+Department           2
+Salary               1
+Joining_Date         0
+Performance_Score    0
+dtype: int64
+
+3. CONSISTENCY
+Unique Department Values:
+['MECH' 'IT' 'ECS' 'COMP' 'I.T' 'Comp' nan 'it']
+Inconsistent Department Entries: 11
+
+4. TIMELINESS
+Latest Joining Date: 2025-11-06 00:00:00
+Oldest Joining Date: 2018-08-24 00:00:00
+
+5. BELIEVABILITY
+Unbelievable Records Found: 10
+
+6. INTERPRETABILITY
+Column Names:
+['Employee_ID', 'Name', 'Age', 'Department', 'Salary', 'Joining_Date', 'Performance_Score']
+
+Data Types:
+Employee_ID                  object
+Name                         object
+Age                         float64
+Department                   object
+Salary                      float64
+Joining_Date         datetime64[ns]
+Performance_Score           float64
+dtype: object
+
+========== EXTRA DATASET INFO ==========
+
+Dataset Shape: (50, 7)
+
+Statistical Summary:
+              Age        Salary         Joining_Date  Performance_Score
+count   49.000000  4.900000e+01                   50          50.000000
+mean    38.000000  1.060494e+06  2021-07-15 22:33:36           3.422000
+min      5.000000 -5.000000e+03  2018-08-24 00:00:00           1.100000
+25%     28.000000  3.708400e+04  2020-01-08 06:00:00           2.100000
+50%     32.000000  4.960400e+04  2021-05-08 12:00:00           3.300000
+75%     40.000000  6.363200e+04  2022-08-14 06:00:00           4.175000
+max    150.000000  9.999999e+06  2025-11-06 00:00:00          10.000000
+std     30.883518  3.044801e+06                  NaN           2.015581
+

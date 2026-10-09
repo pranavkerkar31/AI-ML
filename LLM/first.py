@@ -4,11 +4,15 @@ import os
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents="Explain what an API is in simple terms."
+client = genai.Client(
+    api_key=os.getenv("GEMINI_KEYS")
 )
 
-print(response.text)
+user_input = input("You: ")
+
+response = client.models.generate_content(
+    model="gemini-3.7-flash",
+    contents=user_input
+)
+
+print("AI:", response.text)

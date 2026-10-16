@@ -16,7 +16,7 @@ if not api_key:
 
 client = genai.Client(api_key=api_key)
 
-MODEL = "gemini-3.7-flash"
+MODEL = "gemini-3.6-flash"
 
 # 2. Use the same database as Version 2
 DB_PATH = Path(__file__).with_name("llm_memory.db")

@@ -28,6 +28,10 @@ print("  exit      - Quit the chat")
 while True:
     user_input = input("\nYou: ").strip()
 
+    if not user_input:
+        print("DEBUG: Empty input — skipping API call")
+        continue
+
     # Ignore empty input
     if not user_input:
         continue
